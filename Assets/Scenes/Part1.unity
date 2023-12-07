@@ -133,8 +133,8 @@ GameObject:
   m_Component:
   - component: {fileID: 70607567}
   - component: {fileID: 70607566}
-  - component: {fileID: 70607568}
   - component: {fileID: 70607569}
+  - component: {fileID: 70607568}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Primitive
@@ -336,6 +336,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1218763156}
   - component: {fileID: 1218763155}
+  - component: {fileID: 1218763158}
   - component: {fileID: 1218763157}
   m_Layer: 0
   m_Name: Circle
@@ -424,6 +425,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
+--- !u!114 &1218763158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218763154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 007ac066f04b70c46a1454e41e391f64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1250591993
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,8 +447,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1250591995}
   - component: {fileID: 1250591994}
-  - component: {fileID: 1250591996}
   - component: {fileID: 1250591997}
+  - component: {fileID: 1250591996}
   m_Layer: 0
   m_Name: Square
   m_TagString: Primitive
