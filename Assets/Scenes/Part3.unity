@@ -309,6 +309,7 @@ GameObject:
   m_Component:
   - component: {fileID: 346943116}
   - component: {fileID: 346943115}
+  - component: {fileID: 346943117}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -383,6 +384,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &346943117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346943114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7ab6bff4b3b5c340849d341c3270223, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 30
+  gravity: -9.8
+  stopPosition: -0.45
+  impulseForce: 500
 --- !u!1 &506312111
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,6 +443,7 @@ GameObject:
   m_Component:
   - component: {fileID: 627243316}
   - component: {fileID: 627243315}
+  - component: {fileID: 627243317}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -500,6 +518,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &627243317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627243314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df43b4caad7c41f4a91d07a5cf632069, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 15
+  gravity: -9.8
+  stopPosition: -0.95
+  impulseForce: 500
 --- !u!1 &750019633
 GameObject:
   m_ObjectHideFlags: 0
@@ -660,6 +694,7 @@ GameObject:
   m_Component:
   - component: {fileID: 971698010}
   - component: {fileID: 971698009}
+  - component: {fileID: 971698011}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -734,6 +769,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &971698011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971698008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebd2cb7bb770b2b44ae11353c0460296, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 10
+  gravity: -9.8
+  stopPosition: -0.95
+  impulseForce: 500
 --- !u!1 &1166117319
 GameObject:
   m_ObjectHideFlags: 0
