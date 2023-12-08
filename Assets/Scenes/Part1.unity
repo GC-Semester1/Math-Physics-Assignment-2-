@@ -234,6 +234,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78561f974d4a24f48af9d0af68b39948, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultColor:
+    r: 0
+    g: 0
+    b: 0
+    a: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -437,6 +442,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007ac066f04b70c46a1454e41e391f64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultColor:
+    r: 0
+    g: 0
+    b: 0
+    a: 0
 --- !u!1 &1250591993
 GameObject:
   m_ObjectHideFlags: 0
@@ -548,6 +558,58 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b26a5666395d8944ca31e9aac8cdf6f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultColor:
+    r: 0
+    g: 0
+    b: 0
+    a: 0
+--- !u!1 &1378023486
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1378023488}
+  - component: {fileID: 1378023487}
+  m_Layer: 0
+  m_Name: PhysicsSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1378023487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1378023486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b31f0f52f0015534da4cf2eb0e8e0d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  object1: {fileID: 1250591993}
+  object2: {fileID: 70607565}
+  object3: {fileID: 1218763154}
+--- !u!4 &1378023488
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1378023486}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -556,3 +618,4 @@ SceneRoots:
   - {fileID: 1250591995}
   - {fileID: 70607567}
   - {fileID: 1218763156}
+  - {fileID: 1378023488}
