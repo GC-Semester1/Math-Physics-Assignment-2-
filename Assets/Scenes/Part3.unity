@@ -399,7 +399,7 @@ MonoBehaviour:
   mass: 30
   gravity: -9.8
   stopPosition: -0.45
-  impulseForce: 500
+  impulseForce: 10000
 --- !u!1 &506312111
 GameObject:
   m_ObjectHideFlags: 0
@@ -533,7 +533,7 @@ MonoBehaviour:
   mass: 15
   gravity: -9.8
   stopPosition: -0.95
-  impulseForce: 500
+  impulseForce: 3000
 --- !u!1 &750019633
 GameObject:
   m_ObjectHideFlags: 0
@@ -784,7 +784,7 @@ MonoBehaviour:
   mass: 10
   gravity: -9.8
   stopPosition: -0.95
-  impulseForce: 500
+  impulseForce: 1500
 --- !u!1 &1166117319
 GameObject:
   m_ObjectHideFlags: 0
