@@ -17,9 +17,10 @@ public class ForceSquare : MonoBehaviour
             Vector3 mousePosition = Input.mousePosition;
             Vector3 objectPosition = Camera.main.WorldToScreenPoint(transform.position);
                                                    //The other two values represent the width and height of the primitive
-            Rect objectRect = new Rect(objectPosition.x - 35f, objectPosition.y - 35f, 50f, 50f); 
+            Rect objectRect = new Rect(objectPosition.x - 35f, objectPosition.y - 35f, 50f, 50f);
 
-            //Checks to see if mouse in in a close enough range of a primitive to apply the impulse force to that specific one
+            //Checks to see if mouse was clicked  in a close enough range of a primitive to apply the 
+            //impulse force to that specific one
             if (objectRect.Contains(mousePosition))
             {
                 // Applies an impulse force upwards

@@ -39,14 +39,14 @@ public class Overlap : MonoBehaviour
     // Checks if 2 of the 3 primitives are overlapping
     private bool CheckOverlap(GameObject obj1, GameObject obj2)
     {
-        // Get the bounds of the sprites or colliders of the 2 objects
+        // Get the bounds of the sprites of the 2 objects
         return GetBounds(obj1).Intersects(GetBounds(obj2));
     }
 
-    // Get the bounds of the sprite or collider of a game object
+    // Get the bounds of the SpriteRenderers of the primitives
     private Bounds GetBounds(GameObject obj)
     {
-        // Try to get the SpriteRenderer component
+        // Gets the SpriteRenderer component
         SpriteRenderer spriteRenderer = obj.GetComponent<SpriteRenderer>();
 
         // If a SpriteRenderer exists, return its bounds
@@ -55,24 +55,16 @@ public class Overlap : MonoBehaviour
             return spriteRenderer.bounds;
         }
 
-        // If a SpriteRenderer does not exist, try to get the Collider2D component
-        Collider2D collider = obj.GetComponent<Collider2D>();
-        if (collider != null)
-        {
-            // If a Collider2D is present, return its bounds
-            return collider.bounds;
-        }
-
-        // If both do not exists, return as zero
+        // If it does not exists, return as zero
         return new Bounds(Vector3.zero, Vector3.zero);
     }
 
     // Set the color of each game object based on the overlap status
     private void SetObjectColors()
     {
-        // the color of object1 changes to green when it overlaps with object2 or object3
-        // the color of object2 changes to green when it overlaps with object1 or object3
-        // the color of object3 changes to green when it overlaps with object1 or object2
+        // the color of object1 changes to green while it is overlapping with object2 or object3
+        // the color of object2 changes to green while it is overlapping with object1 or object3
+        // the color of object3 changes to green while it is overlapping with object1 or object2
 
         SetObjectColor(object1, isOverlappingV1 || isOverlappingV2);
 
@@ -82,12 +74,10 @@ public class Overlap : MonoBehaviour
     }
 
     // Sets the color of a primitive based on the overlap status
-    
     private void SetObjectColor(GameObject obj, bool isOverlapping)
     {
-        // Sets the color of the SpriteRenderer component of the object to green if it is overlapping, or red if it is not overlapping
+        // Sets the color of the SpriteRenderer component of the object 
         // to green if it's overlapping, or red if it's not overlapping
-        
         obj.GetComponent<SpriteRenderer>().color = isOverlapping ? Color.green : Color.red;
     }
 }

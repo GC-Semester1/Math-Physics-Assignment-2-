@@ -1,1 +1,0 @@
-# Math-Physics-Assignment-2-

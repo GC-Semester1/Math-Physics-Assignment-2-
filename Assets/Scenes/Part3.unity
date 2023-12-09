@@ -410,7 +410,7 @@ GameObject:
   m_Component:
   - component: {fileID: 506312112}
   m_Layer: 0
-  m_Name: Launch Pad Circle
+  m_Name: Launch Podium Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -628,7 +628,7 @@ GameObject:
   m_Component:
   - component: {fileID: 782110462}
   m_Layer: 0
-  m_Name: Launch Pad Square
+  m_Name: Launch Podium Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -661,7 +661,7 @@ GameObject:
   m_Component:
   - component: {fileID: 963158807}
   m_Layer: 0
-  m_Name: Launch Pad Capsule
+  m_Name: Launch Podium Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

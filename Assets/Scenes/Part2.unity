@@ -220,7 +220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f80dc83114735274a88effa9a988dd48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mass: 10
+  mass: 30
   gravity: -9.8
   stopPosition: -3
 --- !u!1 &773126853
@@ -512,7 +512,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f80dc83114735274a88effa9a988dd48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mass: 10
+  mass: 15
   gravity: -9.8
   stopPosition: -3.5
 --- !u!1 &1937011944
