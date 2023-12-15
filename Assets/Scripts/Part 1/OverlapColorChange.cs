@@ -36,16 +36,16 @@ public class OverlapColorChange : MonoBehaviour
         // Loops through each collected object
         for (int i = 0; i < allObjects.Length; i++)
         {
-            GameObject otherObject = allObjects[i];
+            GameObject currentPrimitive = allObjects[i];
 
             // Skips the current object in the loop
-            if (otherObject == gameObject)
+            if (currentPrimitive == gameObject)
                 continue;
 
             // If an overlap is takes place, the color changes and is returned
-            if (Overlap2D(gameObject, otherObject))
+            if (Overlap2D(gameObject, currentPrimitive))
             {
-                WhenOverlapping(otherObject);
+                WhenOverlapping(currentPrimitive);
                 return;
             }
         }
