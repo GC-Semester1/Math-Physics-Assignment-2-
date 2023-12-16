@@ -61,7 +61,7 @@ public class OverlapColorChange : MonoBehaviour
     }
 
     // Adjusts spriteRenderer when an overlap takes place between two  of the primitives
-    void WhenOverlapping(GameObject otherObject)
+    void WhenOverlapping(GameObject currentPrimitive)
     {
         AdjustColor(ifOverlapping);
     }
@@ -116,7 +116,8 @@ public class OverlapColorChange : MonoBehaviour
         float xMin2, float xMax2,
         float yMin2, float yMax2)
     {
-        return Overlap2D(xMin1, xMax1, xMin2, xMax2) && Overlap2D(yMin1, yMax1, yMin2, yMax2);
+        return Overlap2D(xMin1, xMax1, xMin2, xMax2) 
+            && Overlap2D(yMin1, yMax1, yMin2, yMax2);
     }
 }
 
